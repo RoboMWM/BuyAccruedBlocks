@@ -26,12 +26,6 @@ public class Main extends JavaPlugin implements Listener
     public Economy economy = economyProvider.getProvider();
 
     @Override
-    public void onEnable()
-    {
-        getServer().getPluginManager().registerEvents(this, this);
-    }
-
-    @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
         if (!(sender instanceof Player))
