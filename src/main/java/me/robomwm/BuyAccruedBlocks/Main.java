@@ -35,7 +35,7 @@ public class Main extends JavaPlugin implements Listener
         }
         Player player = (Player)sender;
 
-        if (cmd.getName().equalsIgnoreCase("buy"))
+        if (cmd.getName().equalsIgnoreCase("buyclaimblocks"))
         {
             if (args.length == 0) //If they just did /buy
                 return false; //prints usage message as defined in plugin.yml
