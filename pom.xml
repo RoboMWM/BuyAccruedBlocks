@@ -6,7 +6,7 @@
 
     <groupId>me.robomwm</groupId>
     <artifactId>BuyAccruedBlocks</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <repositories>
         <repository>
             <id>spigot-repo</id>
@@ -15,6 +15,10 @@
         <repository>
             <id>vault-repo</id>
             <url>http://nexus.theyeticave.net/content/repositories/pub_releases</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </repository>
     </repositories>
     <build>
@@ -34,15 +38,13 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.9.2-R0.1-SNAPSHOT</version>
+            <version>1.11-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>me.ryanhamshire</groupId>
+            <groupId>com.github.TechFortress</groupId>
             <artifactId>GriefPrevention</artifactId>
-            <version>14.3</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/lib/GriefPrevention.jar</systemPath>
+            <version>16.4</version>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
