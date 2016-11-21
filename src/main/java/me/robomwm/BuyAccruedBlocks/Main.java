@@ -54,7 +54,7 @@ public class Main extends JavaPlugin implements Listener
             if (wantsToBuy < 1)
                 return false;
 
-            int maxBlocks = gp.config_claims_maxAccruedBlocks;
+            int maxBlocks = gp.config_claims_maxAccruedBlocks_default;
             PlayerData playerData = ds.getPlayerData(player.getUniqueId());
             int currentBlocks = playerData.getAccruedClaimBlocks();
 
