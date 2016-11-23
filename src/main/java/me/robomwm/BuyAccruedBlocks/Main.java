@@ -18,12 +18,16 @@ import java.text.MessageFormat;
 /**
  * Created by Robo on 4/2/2016.
  */
-public class Main extends JavaPlugin implements Listener
+public class Main extends JavaPlugin
 {
     GriefPrevention gp = (GriefPrevention)getServer().getPluginManager().getPlugin("GriefPrevention");
     DataStore ds = gp.dataStore;
-    RegisteredServiceProvider<Economy> economyProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
-    public Economy economy = economyProvider.getProvider();
+    public Economy economy;
+
+    public void onEnable()
+    {
+        economy = getServer().getServicesManager().getRegistration(Economy.class).getProvider();
+    }
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)

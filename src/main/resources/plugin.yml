@@ -4,6 +4,7 @@ version: ${project.version}
 author: RoboMWM
 main: me.robomwm.BuyAccruedBlocks.Main
 depend: [GriefPrevention, Vault]
+softdepend: [Gringotts, Essentials]
 commands:
    buyclaimblocks:
       description: Purchases additional claim blocks with server money.  Doesn't work on servers without a Vault-compatible economy plugin.
